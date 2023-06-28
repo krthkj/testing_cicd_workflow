@@ -88,33 +88,33 @@ link_directories(
 
 # Define the CXX sources
 set ( CXX_SRCS
-    ${CMAKE_CURRENT_LIST_DIR}/src/problem_977.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/problem_557.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/problem_344.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/problem_283.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/tests/test_69.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/problem_35.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/tests/test_19.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/problem_278.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/include/leetcode_ds.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/problem_189.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/tests/test_9.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/problem_0.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/problem_9.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/tests/test_0.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/leetcode.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/problem_876.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/problem_704.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/tests/test_13.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/problem_217.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/problem_19.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/tests/test_217.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/problem_167.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/leetcode_ds.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/problem_0.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_3.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/problem_567.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/problem_69.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/problem_9.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_13.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/problem_19.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/problem_35.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/problem_69.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/problem_167.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/problem_189.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/problem_217.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/problem_278.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/problem_283.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/problem_344.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/problem_557.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/problem_567.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/problem_704.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/problem_876.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/problem_977.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/tests/test_0.cpp
     ${CMAKE_CURRENT_LIST_DIR}/tests/test_3.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/tests/test_9.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/tests/test_13.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/tests/test_19.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/tests/test_69.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/tests/test_217.cpp
 )
 
 set_source_files_properties(

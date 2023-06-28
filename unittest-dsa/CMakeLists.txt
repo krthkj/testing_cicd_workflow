@@ -33,8 +33,6 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CL_OUTPUT_DIRECTORY})
 
 
 # Top project
-## Add the dependencies
-add_subdirectory(${CMAKE_SOURCE_DIR}/../leetcode ${CMAKE_CURRENT_BINARY_DIR}/leetcode-build)
 # Define some variables
 set(PROJECT_unittest-dsa_PATH "${CMAKE_CURRENT_LIST_DIR}")
 set(WORKSPACE_PATH "${CMAKE_CURRENT_LIST_DIR}/..")
@@ -108,9 +106,6 @@ target_link_libraries(unittest-dsa
     libleetcode.so
 )
 
-
-# Adding dependencies
-add_dependencies(unittest-dsa leetcode)
 
 
 #{{{{ User Code 3

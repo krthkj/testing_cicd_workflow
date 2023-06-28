@@ -28,7 +28,7 @@
     <File Name="src/problem_167.cpp"/>
     <File Name="src/problem_69.cpp"/>
     <File Name="src/problem_35.cpp"/>
-    <File Name="include/leetcode_ds.cpp"/>
+    <File Name="src/leetcode_ds.cpp"/>
     <File Name="src/problem_19.cpp"/>
     <File Name="src/problem_0.cpp"/>
     <File Name="src/problem_3.cpp"/>
