@@ -20,7 +20,7 @@ project(leetcode)
 # This setting is useful for providing JSON file used by CodeLite for code completion
 set(CMAKE_EXPORT_COMPILE_COMMANDS 1)
 
-set(CONFIGURATION_NAME "Debug")
+set(CONFIGURATION_NAME "Release")
 
 set(CL_WORKSPACE_DIRECTORY ..)
 # Set default locations
@@ -51,30 +51,16 @@ include_directories(
 
 
 # Compiler options
-add_definitions(-Wredundant-decls)
-add_definitions(-Winline)
-add_definitions(-Wswitch-enum)
-add_definitions(-Wmissing-declarations)
-add_definitions(-Wnon-virtual-dtor)
-add_definitions(-Wzero-as-null-pointer-constant)
-add_definitions(-Winit-self)
-add_definitions(-Wswitch-default)
-add_definitions(-Wfloat-equal)
-add_definitions(-pedantic-errors)
-add_definitions(-g)
-add_definitions(-O0)
-add_definitions(-Og)
-add_definitions(-gdwarf-2)
-add_definitions(-pedantic)
-add_definitions(-W)
+add_definitions(-Wfatal-errors)
+add_definitions(-O1)
+add_definitions(-O)
+add_definitions(-O3)
+add_definitions(-O2)
 add_definitions(-fopenmp)
-add_definitions(-Wextra)
 add_definitions(-std=c++20)
-add_definitions(-Wall)
 
 # Linker options
 set(LINK_OPTIONS -fopenmp)
-set(LINK_OPTIONS ${LINK_OPTIONS} -O0)
 
 
 if(WIN32)
@@ -119,7 +105,7 @@ set ( CXX_SRCS
 
 set_source_files_properties(
     ${CXX_SRCS} PROPERTIES COMPILE_FLAGS 
-    " -Wredundant-decls -Winline -Wswitch-enum -Wmissing-declarations -Wnon-virtual-dtor -Wzero-as-null-pointer-constant -Winit-self -Wswitch-default -Wfloat-equal -pedantic-errors -g -O0 -Og -gdwarf-2 -pedantic -W -fopenmp -Wextra -std=c++20 -Wall")
+    " -Wfatal-errors -O1 -O -O3 -O2 -fopenmp -std=c++20")
 
 if(WIN32)
     enable_language(RC)

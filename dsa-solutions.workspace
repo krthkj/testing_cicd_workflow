@@ -11,7 +11,7 @@
     <WorkspaceConfiguration Name="Release">
       <Environment/>
       <Project Name="leetcode" ConfigName="Release"/>
-      <Project Name="unittest-dsa" ConfigName="Debug"/>
+      <Project Name="unittest-dsa" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
