@@ -35,7 +35,7 @@ test:
     - apk add --no-cache boost-dev
     script:
         - echo "Running output file..."
-        - ./cmake-build-Debug/output/unittest-relearn
+        - ./cmake-build-Debug/output/unittest-dsa
     dependencies:
         - build
 
