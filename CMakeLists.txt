@@ -8,14 +8,5 @@ project(dsa-solutions)
 add_subdirectory(leetcode)
 add_subdirectory(unittest-dsa)
 
-add_definitions(-pedantic-errors)
-add_definitions(-g)
-add_definitions(-O0)
-add_definitions(-pedantic)
-add_definitions(-fopenmp)
-add_definitions(-std=c++20)
-add_definitions(-Wall)
-
 add_dependencies(unittest-dsa leetcode)
-
 
