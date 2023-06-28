@@ -63,5 +63,7 @@
       </Completion>
     </Configuration>
   </Settings>
-  <Dependencies Name="Debug"/>
+  <Dependencies Name="Debug">
+    <Project Name="leetcode"/>
+  </Dependencies>
 </CodeLite_Project>
