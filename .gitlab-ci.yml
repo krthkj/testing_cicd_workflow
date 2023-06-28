@@ -19,13 +19,13 @@ build:
     script:
         - echo $PATH
         - echo "Building project..."
-        - cmake -DCMAKE_CXX_COMPILER=g++ -DCMAKE_C_COMPILER=gcc -Bcmake-build -H.
-        - cmake --build cmake-build -j`nproc`
+        - cmake -DCMAKE_CXX_COMPILER=g++ -DCMAKE_C_COMPILER=gcc -Bcmake-build-Release -H.
+        - cmake --build cmake-build-Release -j`nproc`
     artifacts:
         when: on_success
         expire_in: 1 days
         paths:
-            - cmake-build/output/
+            - cmake-build-Release/output/
 
 test:
     stage: test
@@ -35,7 +35,7 @@ test:
     - apk add --no-cache boost-dev
     script:
         - echo "Running output file..."
-        - ./cmake-build/output/unittest-dsa
+        - ./cmake-build-Release/output/unittest-dsa
     dependencies:
         - build
 
