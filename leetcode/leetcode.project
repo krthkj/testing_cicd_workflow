@@ -1,15 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Project Name="leetcode" Version="11000" InternalType="Library">
   <VirtualDirectory Name="include">
+    <File Name="include/leetcode_ds.hpp"/>
     <File Name="include/leetcode.hpp"/>
   </VirtualDirectory>
   <VirtualDirectory Name="tests">
+    <File Name="tests/test_69.cpp"/>
+    <File Name="tests/test_19.cpp"/>
+    <File Name="tests/test_3.cpp"/>
+    <File Name="tests/test_0.cpp"/>
+    <File Name="tests/test_217.cpp"/>
     <File Name="tests/test_13.cpp"/>
     <File Name="tests/test_9.cpp"/>
   </VirtualDirectory>
   <Description/>
   <Dependencies/>
   <VirtualDirectory Name="src">
+    <File Name="src/problem_977.cpp"/>
+    <File Name="src/problem_876.cpp"/>
+    <File Name="src/problem_704.cpp"/>
+    <File Name="src/problem_567.cpp"/>
+    <File Name="src/problem_557.cpp"/>
+    <File Name="src/problem_344.cpp"/>
+    <File Name="src/problem_283.cpp"/>
+    <File Name="src/problem_278.cpp"/>
+    <File Name="src/problem_189.cpp"/>
+    <File Name="src/problem_167.cpp"/>
+    <File Name="src/problem_69.cpp"/>
+    <File Name="src/problem_35.cpp"/>
+    <File Name="include/leetcode_ds.cpp"/>
+    <File Name="src/problem_19.cpp"/>
+    <File Name="src/problem_0.cpp"/>
+    <File Name="src/problem_3.cpp"/>
+    <File Name="src/problem_217.cpp"/>
     <File Name="src/problem_13.cpp"/>
     <File Name="src/problem_9.cpp"/>
     <File Name="src/leetcode.cpp"/>

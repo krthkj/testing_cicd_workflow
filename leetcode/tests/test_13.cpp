@@ -29,3 +29,33 @@ TEST(leetcode_problem_13, case4)
 
     EXPECT_EQ(res, 1884);
 }
+
+TEST(leetcode_problem_13, case5)
+{
+    int res = leetcode::romanToInt("MMMCMXCIX");
+
+    EXPECT_EQ(res, 3999);
+}
+
+/*
+TEST(leetcode_problem_13, case6)
+{
+    int res = leetcode::romanToInt("MMMMCMXCIX");
+
+    EXPECT_EQ(res, 4999);
+}
+
+TEST(leetcode_problem_13, case7)
+{
+    int res = leetcode::romanToInt("IIII");
+
+    EXPECT_EQ(res, 0);
+}
+
+TEST(leetcode_problem_13, case8)
+{
+    int res = leetcode::romanToInt("MMMMMCMXCIX");
+
+    EXPECT_EQ(res, 0);
+}
+*/

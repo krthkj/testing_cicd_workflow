@@ -59,6 +59,7 @@ Constraints:
 #include "leetcode.hpp"
 
 #include <iostream>
+#include <map>
 #include <string>
 #include <unordered_map>
 
@@ -68,18 +69,19 @@ namespace leetcode::problem_13
 int solution_1(std::string s);
 int solution_2(std::string s);
 int solution_3(std::string s);
+
 } // namespace leetcode::problem_13
 
 int leetcode::romanToInt(std::string roman_string)
 {
-    return problem_13::solution_2(roman_string);
+    return problem_13::solution_3(roman_string);
 }
 
-int leetcode::problem_13::solution_1(std::string s)
+int leetcode::problem_13::solution_1(std::string roman_string)
 {
     unsigned int num{0};
-    // std::cout << s << "=";
-    for (auto c : s) {
+    // std::cout << roman_string << "=";
+    for (auto c : roman_string) {
         switch (c) {
         case 'I':
             num += 1;
@@ -116,22 +118,22 @@ int leetcode::problem_13::solution_1(std::string s)
     return num;
 }
 
-int leetcode::problem_13::solution_2(std::string s)
+int leetcode::problem_13::solution_2(std::string roman_string)
 {
     unsigned int ans{0};
     std::unordered_map<std::string, int> ri_map{{"I", 1},   {"IV", 4},   {"V", 5},   {"IX", 9},  {"X", 10},
                                                 {"CL", 40}, {"L", 50},   {"XC", 90}, {"C", 100}, {"CD", 400},
                                                 {"D", 500}, {"CM", 900}, {"M", 1000}};
 
-    for (size_t i{0}; i < s.length(); ++i) {
+    for (size_t i{0}; i < roman_string.length(); ++i) {
         // check for 2 chars
-        auto it = ri_map.find(s.substr(i, 2));
+        auto it = ri_map.find(roman_string.substr(i, 2));
         // Check if the element was found.
         if (it != ri_map.end()) {
             ans += it->second;
             ++i;
         } else {
-            it = ri_map.find(s.substr(i, 1));
+            it = ri_map.find(roman_string.substr(i, 1));
             if (it != ri_map.end())
                 ans += it->second;
             else
@@ -141,13 +143,16 @@ int leetcode::problem_13::solution_2(std::string s)
     return ans;
 }
 
-int leetcode::problem_13::solution_3(std::string s)
+int leetcode::problem_13::solution_3(std::string roman)
 {
-    unsigned int ans{0};
-    std::unordered_map<std::string, int> ri_map{{"I", 1},   {"V", 5},   {"X", 10},  {"L", 50},
-                                                {"C", 100}, {"D", 500}, {"M", 1000}};
+    std::unordered_map<char, int> ri_map{{'I', 1}, {'V', 5}, {'X', 10}, {'L', 50}, {'C', 100}, {'D', 500}, {'M', 1000}};
+    int ans{0};
 
-    s.clear();
-    
-    return ans;
+    for (size_t i{0}; i < roman.length(); ++i) {
+        int value{ri_map[roman.at(i)]};
+        if (i + 1 < roman.length() && value < ri_map[roman.at(i + 1)])
+            value = -value;
+        ans += value;
+    }
+    return (ans>3999)?0:ans;
 }
