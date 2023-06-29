@@ -33,6 +33,7 @@ void moveZeroes(std::vector<int>& nums);                        // problem 283
 void reverseString(std::vector<char>& s);                       // problem 344
 std::string reverseWords(std::string s);                        // problem 557
 bool checkInclusion(std::string s1, std::string s2);            // problem 567
+double findMaxAverage(std::vector<int>& nums, int k);                // problem 643
 int search(std::vector<int>& nums, int target);                 // problem 704
 ListNode* middleNode(ListNode* head);                           // problem 876
 std::vector<int> sortedSquares(std::vector<int>& nums);         // problem 977

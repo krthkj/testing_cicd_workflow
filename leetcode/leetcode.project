@@ -16,6 +16,7 @@
   <Description/>
   <Dependencies/>
   <VirtualDirectory Name="src">
+    <File Name="src/problem_643.cpp"/>
     <File Name="src/problem_977.cpp"/>
     <File Name="src/problem_876.cpp"/>
     <File Name="src/problem_704.cpp"/>

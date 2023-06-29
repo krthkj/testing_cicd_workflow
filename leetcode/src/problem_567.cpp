@@ -1,4 +1,4 @@
-/***********************************************************************************************************************
+/***************************************************************************************************
  * 567. Permutation in String
  *
  * Given two strings s1 and s2, return true if s2 contains a permutation of s1, or false otherwise.
@@ -36,7 +36,7 @@
  *    - if two maps are same return true
  * 3. return false if parse completes
  *
- */
+ ***************************************************************************************************/
 
 #include "leetcode.hpp"
 
