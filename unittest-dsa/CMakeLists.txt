@@ -33,6 +33,8 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CL_OUTPUT_DIRECTORY})
 
 
 # Top project
+## Add the dependencies
+add_subdirectory(${CMAKE_SOURCE_DIR}/../leetcode ${CMAKE_CURRENT_BINARY_DIR}/leetcode-build)
 # Define some variables
 set(PROJECT_unittest-dsa_PATH "${CMAKE_CURRENT_LIST_DIR}")
 set(WORKSPACE_PATH "${CMAKE_CURRENT_LIST_DIR}/..")
@@ -104,6 +106,16 @@ target_link_libraries(unittest-dsa
     libgtest.a
     libleetcode.so
 )
+
+
+# Adding dependencies
+add_dependencies(unittest-dsa leetcode)
+
+# Adding POST_BUILD commands
+add_custom_command(
+    TARGET unittest-dsa
+    POST_BUILD
+    COMMAND strip "${WORKSPACE_PATH}/cmake-build-Release/output/unittest-dsa"   && echo "[----] Strip target unittest-dsa")
 
 
 

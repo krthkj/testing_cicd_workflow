@@ -104,7 +104,9 @@
         <StartupCommands/>
       </Debugger>
       <PreBuild/>
-      <PostBuild/>
+      <PostBuild>
+        <Command Enabled="yes">strip "$(WorkspacePath)/cmake-build-Release/output/libleetcode.so" &amp;&amp; echo "[----] Strip target libleetcode.so"</Command>
+      </PostBuild>
       <CustomBuild Enabled="no">
         <RebuildCommand/>
         <CleanCommand/>

@@ -124,6 +124,13 @@ add_library(leetcode SHARED ${RC_SRCS} ${CXX_SRCS} ${C_SRCS} ${ASM_SRCS})
 target_link_libraries(leetcode ${LINK_OPTIONS})
 
 
+# Adding POST_BUILD commands
+add_custom_command(
+    TARGET leetcode
+    POST_BUILD
+    COMMAND strip "${WORKSPACE_PATH}/cmake-build-Release/output/libleetcode.so" && echo "[----] Strip target libleetcode.so")
+
+
 
 #{{{{ User Code 3
 # Place your code here
