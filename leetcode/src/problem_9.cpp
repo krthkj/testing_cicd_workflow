@@ -33,19 +33,28 @@ Follow up: Could you solve it without converting the integer to a string?
 
 #include "leetcode.hpp"
 
-// Decleration
-namespace leetcode::problem_9
+namespace leetcode
+{
+/***********************************************************
+ * Decleration
+ ***********************************************************/
+namespace problem_9
 {
 bool solution_1(int x);
 }
 
-bool leetcode::isPalindrome(int nums)
+/***********************************************************
+ * Implementation: solving main problem
+ ***********************************************************/
+bool isPalindrome(int nums)
 {
     return problem_9::solution_1(nums);
 }
 
-// implementation
-bool leetcode::problem_9::solution_1(int x)
+/***********************************************************
+ * Implementation: Variations of Solution
+ ***********************************************************/
+bool problem_9::solution_1(int x)
 {
     if (x < 0)
         return false;
@@ -59,3 +68,4 @@ bool leetcode::problem_9::solution_1(int x)
     }
     return ((int)rev == x) ? true : false;
 }
+} // namespace leetcode

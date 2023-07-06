@@ -63,21 +63,31 @@ Constraints:
 #include <string>
 #include <unordered_map>
 
-// Decleration
-namespace leetcode::problem_13
+namespace leetcode
+{
+
+/***********************************************************
+ * Decleration
+ ***********************************************************/
+namespace problem_13
 {
 int solution_1(std::string s);
 int solution_2(std::string s);
 int solution_3(std::string s);
+} // namespace problem_13
 
-} // namespace leetcode::problem_13
-
-int leetcode::romanToInt(std::string roman_string)
+/***********************************************************
+ * Implementation: solving main problem
+ ***********************************************************/
+int romanToInt(std::string roman_string)
 {
     return problem_13::solution_3(roman_string);
 }
 
-int leetcode::problem_13::solution_1(std::string roman_string)
+/***********************************************************
+ * Implementation: Variations of Solution
+ ***********************************************************/
+int problem_13::solution_1(std::string roman_string)
 {
     unsigned int num{0};
     // std::cout << roman_string << "=";
@@ -118,7 +128,7 @@ int leetcode::problem_13::solution_1(std::string roman_string)
     return num;
 }
 
-int leetcode::problem_13::solution_2(std::string roman_string)
+int problem_13::solution_2(std::string roman_string)
 {
     unsigned int ans{0};
     std::unordered_map<std::string, int> ri_map{{"I", 1},   {"IV", 4},   {"V", 5},   {"IX", 9},  {"X", 10},
@@ -143,7 +153,7 @@ int leetcode::problem_13::solution_2(std::string roman_string)
     return ans;
 }
 
-int leetcode::problem_13::solution_3(std::string roman)
+int problem_13::solution_3(std::string roman)
 {
     std::unordered_map<char, int> ri_map{{'I', 1}, {'V', 5}, {'X', 10}, {'L', 50}, {'C', 100}, {'D', 500}, {'M', 1000}};
     int ans{0};
@@ -154,5 +164,7 @@ int leetcode::problem_13::solution_3(std::string roman)
             value = -value;
         ans += value;
     }
-    return (ans>3999)?0:ans;
+    return (ans > 3999) ? 0 : ans;
 }
+
+} // namespace leetcode

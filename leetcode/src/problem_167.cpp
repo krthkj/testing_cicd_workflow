@@ -46,17 +46,25 @@
 namespace leetcode
 {
 
-// Decleration
+/***********************************************************
+ * Decleration
+ ***********************************************************/
 namespace problem_167
 {
 std::vector<int> solution_1(std::vector<int>& numbers, int target);
 } // namespace problem_167
 
+/***********************************************************
+ * Implementation: solving main problem
+ ***********************************************************/
 std::vector<int> twoSum(std::vector<int>& numbers, int target)
 {
     return problem_167::solution_1(numbers, target);
 }
 
+/***********************************************************
+ * Implementation: Variations of Solution
+ ***********************************************************/
 std::vector<int> problem_167::solution_1(std::vector<int>& numbers, int target)
 {
     int lo{0}, hi{int(numbers.size()) - 1};

@@ -46,19 +46,26 @@
 
 namespace leetcode
 {
-
-// Decleration
+/***********************************************************
+ * Decleration
+ ***********************************************************/
 namespace problem_567
 {
 bool solution_1(std::string s1, std::string s2);
 bool solution_2(std::string s1, std::string s2);
 } // namespace problem_567
 
+/***********************************************************
+ * Implementation: solving main problem
+ ***********************************************************/
 bool checkInclusion(std::string s1, std::string s2)
 {
     return problem_567::solution_1(s1, s2);
 }
 
+/***********************************************************
+ * Implementation: Variations of Solution
+ ***********************************************************/
 bool problem_567::solution_1(std::string s1, std::string s2)
 {
     int n1 = s1.length(), n2 = s2.length();

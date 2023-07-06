@@ -84,6 +84,7 @@ set ( CXX_SRCS
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_35.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_69.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_167.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/problem_179.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_189.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_217.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_278.cpp
@@ -101,7 +102,9 @@ set ( CXX_SRCS
     ${CMAKE_CURRENT_LIST_DIR}/tests/test_13.cpp
     ${CMAKE_CURRENT_LIST_DIR}/tests/test_19.cpp
     ${CMAKE_CURRENT_LIST_DIR}/tests/test_69.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/tests/test_179.cpp
     ${CMAKE_CURRENT_LIST_DIR}/tests/test_217.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/tests/test_643.cpp
 )
 
 set_source_files_properties(

@@ -32,7 +32,9 @@ Constraints:
 #include <set>
 #include <vector>
 
-// Decleration
+/***********************************************************
+ * Decleration
+ ***********************************************************/
 namespace leetcode::problem_217
 {
 bool solution_1(std::vector<int>& nums);
@@ -40,11 +42,17 @@ bool solution_2(std::vector<int>& nums);
 bool solution_3(std::vector<int>& nums);
 } // namespace leetcode::problem_217
 
+/***********************************************************
+ * Implementation: solving main problem
+ ***********************************************************/
 bool leetcode::containsDuplicate(std::vector<int>& nums)
 {
     return problem_217::solution_2(nums);
 }
 
+/***********************************************************
+ * Implementation: Variations of Solution
+ ***********************************************************/
 bool leetcode::problem_217::solution_1(std::vector<int>& nums)
 {
     if (nums.empty())

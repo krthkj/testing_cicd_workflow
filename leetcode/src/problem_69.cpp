@@ -51,11 +51,17 @@ namespace problem_69
 int solution_1(int x);
 } // namespace problem_69
 
+/***********************************************************
+ * Implementation: solving main problem
+ ***********************************************************/
 int mySqrt(int x)
 {
     return problem_69::solution_1(x);
 }
 
+/***********************************************************
+ * Implementation: Variations of Solution
+ ***********************************************************/
 int problem_69::solution_1(int x)
 {
     if (x == 0)

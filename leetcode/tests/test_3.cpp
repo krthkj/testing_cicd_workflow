@@ -16,7 +16,6 @@ TEST(leetcode_problem_3, case2)
     EXPECT_EQ(res, 1);
 }
 
-
 TEST(leetcode_problem_3, case3)
 {
     int res = leetcode::lengthOfLongestSubstring("pwwkew");

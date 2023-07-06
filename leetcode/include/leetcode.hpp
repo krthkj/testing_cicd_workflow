@@ -27,13 +27,14 @@ ListNode* removeNthFromEnd(ListNode* head, int n);              // problem 19
 int searchInsert(std::vector<int>& nums, int target);           // problem 35
 int mySqrt(int x);                                              // problem 69
 std::vector<int> twoSum(std::vector<int>& numbers, int target); // problem 167
+std::string largestNumber(std::vector<int>& nums);              // problem 179
 void rotate(std::vector<int>& nums, int k);                     // problem 189
 bool containsDuplicate(std::vector<int>& nums);                 // problem 217
 void moveZeroes(std::vector<int>& nums);                        // problem 283
 void reverseString(std::vector<char>& s);                       // problem 344
 std::string reverseWords(std::string s);                        // problem 557
 bool checkInclusion(std::string s1, std::string s2);            // problem 567
-double findMaxAverage(std::vector<int>& nums, int k);                // problem 643
+double findMaxAverage(std::vector<int>& nums, int k);           // problem 643
 int search(std::vector<int>& nums, int target);                 // problem 704
 ListNode* middleNode(ListNode* head);                           // problem 876
 std::vector<int> sortedSquares(std::vector<int>& nums);         // problem 977

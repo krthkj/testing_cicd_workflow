@@ -34,19 +34,26 @@
 namespace leetcode
 {
 
-// Decleration
+/***********************************************************
+ * Decleration
+ ***********************************************************/
 namespace problem_19
 {
 int getListLen(ListNode* head);
 ListNode* solution_1(ListNode* head, int n);
 } // namespace problem_19
 
-// implementation
+/***********************************************************
+ * Implementation: solving main problem
+ ***********************************************************/
 ListNode* removeNthFromEnd(ListNode* head, int n)
 {
     return problem_19::solution_1(head, n);
 }
 
+/***********************************************************
+ * Implementation: Variations of Solution
+ ***********************************************************/
 int problem_19::getListLen(ListNode* head)
 {
     ListNode* tmp{head};

@@ -54,11 +54,17 @@ int solution_2(std::vector<int>& nums, int target);
 int solution_3(std::vector<int>& nums, int target);
 } // namespace problem_704
 
+/***********************************************************
+ * Implementation: solving main problem
+ ***********************************************************/
 int search(std::vector<int>& nums, int target)
 {
     return problem_704::solution_1(nums, target);
 }
 
+/***********************************************************
+ * Implementation: Variations of Solution
+ ***********************************************************/
 int problem_704::bin_search(std::vector<int>& data, int low, int high, int target)
 {
     if (low <= high) {

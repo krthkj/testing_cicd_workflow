@@ -23,20 +23,28 @@
 #include <algorithm>
 #include <vector>
 
-// Decleration
 namespace leetcode
 {
 
+/***********************************************************
+ * Decleration
+ ***********************************************************/
 namespace problem_344
 {
 void solution_1(std::vector<char>& s);
 } // namespace problem_344
 
+/***********************************************************
+ * Implementation: solving main problem
+ ***********************************************************/
 void reverseString(std::vector<char>& s)
 {
     return problem_344::solution_1(s);
 }
 
+/***********************************************************
+ * Implementation: Variations of Solution
+ ***********************************************************/
 void problem_344::solution_1(std::vector<char>& s)
 {
     int r = s.size() - 1;

@@ -41,11 +41,17 @@ ListNode* solution_1(ListNode* head);
 ListNode* solution_2(ListNode* head);
 } // namespace problem_876
 
+/***********************************************************
+ * Implementation: solving main problem
+ ***********************************************************/
 ListNode* middleNode(ListNode* head)
 {
     return problem_876::solution_1(head);
 }
 
+/***********************************************************
+ * Implementation: Variations of Solution
+ ***********************************************************/
 ListNode* problem_876::solution_1(ListNode* head)
 {
     ListNode* cur{head};

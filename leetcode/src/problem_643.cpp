@@ -48,7 +48,7 @@ double solution_1(std::vector<int>& nums, int k);
  ***********************************************************/
 double findMaxAverage(std::vector<int>& nums, int k)
 {
-    return problem_643::solution_1(nums,k);
+    return problem_643::solution_1(nums, k);
 }
 
 /***********************************************************
@@ -56,7 +56,14 @@ double findMaxAverage(std::vector<int>& nums, int k)
  ***********************************************************/
 double problem_643::solution_1(std::vector<int>& nums, int k)
 {
-    return 0.0;
+    double sum{0};
+    for (int i{0}; i < k; ++i)
+        sum += nums.at(i);
+    double res = sum;
+    for (size_t i = k; i < nums.size(); ++i) {
+        sum += nums.at(i) - nums.at(i - k);
+        res = std::max(res, sum);
+    }
+    return res / k;
 }
-
 } // namespace leetcode

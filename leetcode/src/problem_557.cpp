@@ -27,9 +27,12 @@
 #include <iostream>
 #include <stack>
 
-// Decleration
 namespace leetcode
 {
+
+/***********************************************************
+ * Decleration
+ ***********************************************************/
 namespace problem_557
 {
 void reverse(std::string& s, size_t start, size_t end);
@@ -37,11 +40,17 @@ std::string solution_1(std::string s);
 std::string solution_2(std::string s);
 } // namespace problem_557
 
+/***********************************************************
+ * Implementation: solving main problem
+ ***********************************************************/
 std::string reverseWords(std::string s)
 {
     return problem_557::solution_1(s);
 }
 
+/***********************************************************
+ * Implementation: Variations of Solution
+ ***********************************************************/
 std::string problem_557::solution_1(std::string s)
 {
     if (s.length() > 0) {

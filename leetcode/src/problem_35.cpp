@@ -32,17 +32,25 @@
 namespace leetcode
 {
 
-// Decleration
+/***********************************************************
+ * Decleration
+ ***********************************************************/
 namespace problem_35
 {
 int solution_1(std::vector<int>& nums, int target);
 } // namespace problem_35
 
+/***********************************************************
+ * Implementation: solving main problem
+ ***********************************************************/
 int searchInsert(std::vector<int>& nums, int target)
 {
     return problem_35::solution_1(nums, target);
 }
 
+/***********************************************************
+ * Implementation: Variations of Solution
+ ***********************************************************/
 int problem_35::solution_1(std::vector<int>& nums, int target)
 {
     int l{0}, r{int(nums.size()) - 1}, mid{r / 2};

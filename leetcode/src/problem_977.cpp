@@ -45,17 +45,25 @@
 namespace leetcode
 {
 
-// Decleration
+/***********************************************************
+ * Decleration
+ ***********************************************************/
 namespace problem_977
 {
 std::vector<int> solution_1(std::vector<int>& nums);
 } // namespace problem_977
 
+/***********************************************************
+ * Implementation: solving main problem
+ ***********************************************************/
 std::vector<int> sortedSquares(std::vector<int>& nums)
 {
     return problem_977::solution_1(nums);
 }
 
+/***********************************************************
+ * Implementation: Variations of Solution
+ ***********************************************************/
 std::vector<int> problem_977::solution_1(std::vector<int>& nums)
 {
     std::vector<int> res(nums.size());

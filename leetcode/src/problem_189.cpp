@@ -46,17 +46,25 @@
 namespace leetcode
 {
 
-// Decleration
+/***********************************************************
+ * Decleration
+ ***********************************************************/
 namespace problem_189
 {
 void solution_1(std::vector<int>& nums, int k);
 } // namespace problem_189
 
+/***********************************************************
+ * Implementation: solving main problem
+ ***********************************************************/
 void rotate(std::vector<int>& nums, int k)
 {
     problem_189::solution_1(nums, k);
 }
 
+/***********************************************************
+ * Implementation: Variations of Solution
+ ***********************************************************/
 void problem_189::solution_1(std::vector<int>& nums, int k)
 {
     k %= nums.size();

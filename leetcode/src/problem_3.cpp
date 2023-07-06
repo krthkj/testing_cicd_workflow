@@ -37,19 +37,29 @@
 #include <map>
 #include <unordered_map>
 
-// Decleration
-namespace leetcode::problem_3
+namespace leetcode
+{
+/***********************************************************
+ * Decleration
+ ***********************************************************/
+namespace problem_3
 {
 int solution_1(std::string s);
 int solution_2(std::string s);
-} // namespace leetcode::problem_3
+} // namespace problem_3
 
-int leetcode::lengthOfLongestSubstring(std::string s)
+/***********************************************************
+ * Implementation: solving main problem
+ ***********************************************************/
+int lengthOfLongestSubstring(std::string s)
 {
     return problem_3::solution_1(s);
 }
 
-int leetcode::problem_3::solution_1(std::string s)
+/***********************************************************
+ * Implementation: Variations of Solution
+ ***********************************************************/
+int problem_3::solution_1(std::string s)
 {
     std::map<char, int> ss_map;
     int max_len{0};
@@ -67,7 +77,7 @@ int leetcode::problem_3::solution_1(std::string s)
     return max_len;
 }
 
-int leetcode::problem_3::solution_2(std::string s)
+int problem_3::solution_2(std::string s)
 {
     std::unordered_map<char, int> ss_map;
     int max_len{0};
@@ -82,3 +92,4 @@ int leetcode::problem_3::solution_2(std::string s)
     }
     return max_len;
 }
+} // namespace leetcode
