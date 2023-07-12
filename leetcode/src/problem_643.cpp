@@ -30,6 +30,7 @@
 #include "leetcode.hpp"
 
 #include <iostream>
+#include <numeric>
 #include <vector>
 
 namespace leetcode
@@ -41,6 +42,7 @@ namespace leetcode
 namespace problem_643
 {
 double solution_1(std::vector<int>& nums, int k);
+double solution_2(std::vector<int>& nums, int k);
 } // namespace problem_643
 
 /***********************************************************
@@ -48,7 +50,7 @@ double solution_1(std::vector<int>& nums, int k);
  ***********************************************************/
 double findMaxAverage(std::vector<int>& nums, int k)
 {
-    return problem_643::solution_1(nums, k);
+    return problem_643::solution_2(nums, k);
 }
 
 /***********************************************************
@@ -65,5 +67,18 @@ double problem_643::solution_1(std::vector<int>& nums, int k)
         res = std::max(res, sum);
     }
     return res / k;
+}
+
+double problem_643::solution_2(std::vector<int>& nums, int k)
+{
+    if (nums.empty() || k > (int)nums.size())
+        return 0;
+    int sum = std::accumulate(nums.begin(), nums.begin() + k, 0);
+    int res = sum;
+    for (size_t i = k; i < nums.size(); ++i) {
+        sum += nums.at(i) - nums.at(i - k);
+        res = std::max(res, sum);
+    }
+    return (double)res / k;
 }
 } // namespace leetcode

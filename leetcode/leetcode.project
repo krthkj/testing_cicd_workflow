@@ -5,6 +5,8 @@
     <File Name="include/leetcode.hpp"/>
   </VirtualDirectory>
   <VirtualDirectory Name="tests">
+    <File Name="tests/test_14.cpp"/>
+    <File Name="tests/test_1004.cpp"/>
     <File Name="tests/test_179.cpp"/>
     <File Name="tests/test_643.cpp"/>
     <File Name="tests/test_69.cpp"/>
@@ -18,6 +20,8 @@
   <Description/>
   <Dependencies/>
   <VirtualDirectory Name="src">
+    <File Name="src/problem_14.cpp"/>
+    <File Name="src/problem_1004.cpp"/>
     <File Name="src/problem_179.cpp"/>
     <File Name="src/problem_643.cpp"/>
     <File Name="src/problem_977.cpp"/>
