@@ -22,8 +22,9 @@ build:
         - cmake -DCMAKE_CXX_COMPILER=g++ -DCMAKE_C_COMPILER=gcc -Bcmake-build-Release -H.
         - cmake --build cmake-build-Release -j`nproc`
     artifacts:
-        when: on_success
-        expire_in: 1 days
+        expire_in:
+            on_success: 7 days
+            on_failure: 1 day
         paths:
             - cmake-build-Release/output/
 
