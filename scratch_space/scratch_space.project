@@ -83,7 +83,9 @@
         <StartupCommands/>
       </Debugger>
       <PreBuild/>
-      <PostBuild/>
+      <PostBuild>
+        <Command Enabled="yes">strip "$(WorkspacePath)/cmake-build-Release/output/scratch_space" &amp;&amp; echo "[----] Strip target scratch_space"</Command>
+      </PostBuild>
       <CustomBuild Enabled="no">
         <RebuildCommand/>
         <CleanCommand/>

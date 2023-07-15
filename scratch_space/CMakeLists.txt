@@ -106,6 +106,13 @@ target_link_libraries(scratch_space
 )
 
 
+# Adding POST_BUILD commands
+add_custom_command(
+    TARGET scratch_space
+    POST_BUILD
+    COMMAND strip "${WORKSPACE_PATH}/cmake-build-Release/output/scratch_space" && echo "[----] Strip target scratch_space")
+
+
 
 #{{{{ User Code 3
 # Place your code here
