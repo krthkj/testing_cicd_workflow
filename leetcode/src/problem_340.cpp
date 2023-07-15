@@ -23,6 +23,7 @@
 
 #include <iostream>
 #include <string>
+#include <unordered_map>
 #include <unordered_set>
 
 namespace leetcode
@@ -33,8 +34,10 @@ namespace leetcode
  ***********************************************************/
 namespace problem_340
 {
-int solution_1(std::string& s, int k);
-int solution_2(std::string& s, int k);
+int solution_1(std::string& s, int k); // FAIL
+int solution_2(std::string& s, int k); // FAIL
+int solution_3(std::string& s, int k); // SUCCESS
+int solution_4(std::string& s, int k); // SUCCESS
 } // namespace problem_340
 
 /***********************************************************
@@ -42,7 +45,7 @@ int solution_2(std::string& s, int k);
  ***********************************************************/
 int lengthOfLongestSubstringKDistinct(std::string s, int k)
 {
-    return problem_340::solution_2(s, k);
+    return problem_340::solution_4(s, k);
 }
 
 /***********************************************************
@@ -75,31 +78,65 @@ int problem_340::solution_1(std::string& s, int k)
 
 int problem_340::solution_2(std::string& s, int k)
 {
-    if (s.size() <= 0)
-        return 0;
-    if (k <= 0)
+    int n{(int)s.size()};
+    if (n * k == 0)
         return 0;
 
     std::unordered_set<char> uniq{};
-    size_t l{0}, res{0}, subStrLen{0};
-    for (size_t i{0}; i < s.size(); ++i) {
-        if (uniq.count(s.at(i)) == 0) {
-            if ((int)uniq.size() < k) {
-                uniq.insert(s.at(i));
-            } else {
+    int l{0}, res{0}, subStrLen{0};
+    for (int r{0}; r < n; ++r) {
+        if (uniq.count(s.at(r)) == 0) {
+            uniq.insert(s.at(r));
+            if ((int)uniq.size() > k) {
                 char tmp = s.at(l);
                 uniq.erase(tmp);
-                uniq.insert(s.at(i));
-                size_t find_res = s.find(tmp, l);
-                while (find_res <= i && find_res != std::string::npos) {
+                int find_res = s.find(tmp, l);
+                while (find_res <= r && find_res != -1) {
                     l = find_res + 1;
                     find_res = s.find(tmp, l);
                 }
             }
         }
-        subStrLen = i - l + 1;
+        subStrLen = r - l + 1;
         res = std::max(subStrLen, res);
     }
     return (int)res;
 }
+
+int problem_340::solution_3(std::string& s, int k)
+{
+    if ((int)s.size() * k == 0)
+        return 0;
+    std::unordered_map<char, int> uniq{};
+    int l{-1}, subStrLen{0};
+    for (int r{0}; r < (int)s.size(); ++r) {
+        ++uniq[s.at(r)];
+        if ((int)uniq.size() > k) {
+            auto itr = uniq.find(s.at(++l));
+            if (--(itr->second) <= 0)
+                uniq.erase(itr);
+        }
+        subStrLen = std::max(subStrLen, r - l);
+    }
+    return subStrLen;
+}
+
+int problem_340::solution_4(std::string& s, int k)
+{
+    int n{(int)s.size()};
+    if (n * k == 0)
+        return 0;
+    std::unordered_map<char, int> uniq{};
+    int l{-1}, subStrLen{0};
+    for (int r{0}; r < n; ++r) {
+        ++uniq[s.at(r)];
+        if ((int)uniq.size() > k) {
+            if (--uniq[s.at(++l)] == 0)
+                uniq.erase(s.at(l));
+        }
+        subStrLen = std::max(subStrLen, r - l);
+    }
+    return subStrLen;
+}
+
 } // namespace leetcode

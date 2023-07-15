@@ -22,11 +22,9 @@
         <IncludePath Value="/usr/local/include"/>
         <IncludePath Value="./include"/>
         <IncludePath Value="../leetcode/include/"/>
-        <IncludePath Value="../leetcode/tests/"/>
       </Compiler>
       <Linker Options="-fopenmp;-O0" Required="yes">
         <LibraryPath Value="$(WorkspacePath)/cmake-build-$(WorkspaceConfiguration)/output/"/>
-        <Library Value="libgtest.a"/>
         <Library Value="libleetcode.so"/>
       </Linker>
       <ResourceCompiler Options="" Required="no"/>

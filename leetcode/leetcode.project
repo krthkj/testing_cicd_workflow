@@ -4,20 +4,6 @@
     <File Name="include/leetcode_ds.hpp"/>
     <File Name="include/leetcode.hpp"/>
   </VirtualDirectory>
-  <VirtualDirectory Name="tests">
-    <File Name="tests/test_340.cpp"/>
-    <File Name="tests/test_14.cpp"/>
-    <File Name="tests/test_1004.cpp"/>
-    <File Name="tests/test_179.cpp"/>
-    <File Name="tests/test_643.cpp"/>
-    <File Name="tests/test_69.cpp"/>
-    <File Name="tests/test_19.cpp"/>
-    <File Name="tests/test_3.cpp"/>
-    <File Name="tests/test_0.cpp"/>
-    <File Name="tests/test_217.cpp"/>
-    <File Name="tests/test_13.cpp"/>
-    <File Name="tests/test_9.cpp"/>
-  </VirtualDirectory>
   <Description/>
   <Dependencies/>
   <VirtualDirectory Name="src">

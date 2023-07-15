@@ -69,4 +69,20 @@ TEST(leetcode_problem_340, case8)
     int res = leetcode::lengthOfLongestSubstringKDistinct(s, k);
     EXPECT_EQ(res, 4);
 }
+
+TEST(leetcode_problem_340, case9)
+{
+    std::string s = {""};
+    int k = 2;
+    int res = leetcode::lengthOfLongestSubstringKDistinct(s, k);
+    EXPECT_EQ(res, 0);
+}
+
+TEST(leetcode_problem_340, case10)
+{
+    std::string s = {"abaccc"};
+    int k = 0;
+    int res = leetcode::lengthOfLongestSubstringKDistinct(s, k);
+    EXPECT_EQ(res, 0);
+}
 } // namespace leetcode::testing

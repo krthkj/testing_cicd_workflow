@@ -9,7 +9,7 @@ cmake_minimum_required(VERSION 3.0)
 
 enable_language(CXX C ASM)
 # Project name
-project(unittest-dsa)
+project(scratch_space)
 
 
 
@@ -20,7 +20,7 @@ project(unittest-dsa)
 # This setting is useful for providing JSON file used by CodeLite for code completion
 set(CMAKE_EXPORT_COMPILE_COMMANDS 1)
 
-set(CONFIGURATION_NAME "Release")
+set(CONFIGURATION_NAME "Debug")
 
 set(CL_WORKSPACE_DIRECTORY ..)
 # Set default locations
@@ -34,7 +34,7 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CL_OUTPUT_DIRECTORY})
 
 # Top project
 # Define some variables
-set(PROJECT_unittest-dsa_PATH "${CMAKE_CURRENT_LIST_DIR}")
+set(PROJECT_scratch_space_PATH "${CMAKE_CURRENT_LIST_DIR}")
 set(WORKSPACE_PATH "${CMAKE_CURRENT_LIST_DIR}/..")
 
 
@@ -46,24 +46,24 @@ set(WORKSPACE_PATH "${CMAKE_CURRENT_LIST_DIR}/..")
 include_directories(
     .
     /usr/local/include
-    ../leetcode/include/
     ./include
-    ./leetcode
+    ../leetcode/include/
 
 )
 
 
 # Compiler options
-add_definitions(-Wfatal-errors)
-add_definitions(-O1)
-add_definitions(-O)
-add_definitions(-O3)
-add_definitions(-O2)
+add_definitions(-pedantic-errors)
+add_definitions(-g)
+add_definitions(-O0)
+add_definitions(-pedantic)
 add_definitions(-fopenmp)
 add_definitions(-std=c++20)
+add_definitions(-Wall)
 
 # Linker options
 set(LINK_OPTIONS -fopenmp)
+set(LINK_OPTIONS ${LINK_OPTIONS} -O0)
 
 
 if(WIN32)
@@ -78,24 +78,12 @@ link_directories(
 
 # Define the CXX sources
 set ( CXX_SRCS
-    ${CMAKE_CURRENT_LIST_DIR}/src/leetcode/problems/test_0.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/leetcode/problems/test_1004.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/leetcode/problems/test_13.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/leetcode/problems/test_14.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/leetcode/problems/test_179.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/leetcode/problems/test_19.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/leetcode/problems/test_217.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/leetcode/problems/test_340.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/leetcode/problems/test_3.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/leetcode/problems/test_643.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/leetcode/problems/test_69.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/leetcode/problems/test_9.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/main.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/main.cpp
 )
 
 set_source_files_properties(
     ${CXX_SRCS} PROPERTIES COMPILE_FLAGS 
-    " -Wfatal-errors -O1 -O -O3 -O2 -fopenmp -std=c++20")
+    " -pedantic-errors -g -O0 -pedantic -fopenmp -std=c++20 -Wall")
 
 if(WIN32)
     enable_language(RC)
@@ -109,20 +97,12 @@ endif(WIN32)
 # Place your code here
 #}}}}
 
-add_executable(unittest-dsa ${RC_SRCS} ${CXX_SRCS} ${C_SRCS} ${ASM_SRCS})
-target_link_libraries(unittest-dsa ${LINK_OPTIONS})
+add_executable(scratch_space ${RC_SRCS} ${CXX_SRCS} ${C_SRCS} ${ASM_SRCS})
+target_link_libraries(scratch_space ${LINK_OPTIONS})
 
-target_link_libraries(unittest-dsa
-    libgtest.a
+target_link_libraries(scratch_space
     libleetcode.so
 )
-
-
-# Adding POST_BUILD commands
-add_custom_command(
-    TARGET unittest-dsa
-    POST_BUILD
-    COMMAND strip "${WORKSPACE_PATH}/cmake-build-Release/output/unittest-dsa"   && echo "[----] Strip target unittest-dsa")
 
 
 
