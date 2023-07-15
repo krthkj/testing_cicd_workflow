@@ -20,7 +20,7 @@ project(scratch_space)
 # This setting is useful for providing JSON file used by CodeLite for code completion
 set(CMAKE_EXPORT_COMPILE_COMMANDS 1)
 
-set(CONFIGURATION_NAME "Debug")
+set(CONFIGURATION_NAME "Release")
 
 set(CL_WORKSPACE_DIRECTORY ..)
 # Set default locations
@@ -53,13 +53,14 @@ include_directories(
 
 
 # Compiler options
-add_definitions(-pedantic-errors)
-add_definitions(-g)
+add_definitions(-Wfatal-errors)
+add_definitions(-O1)
+add_definitions(-O)
+add_definitions(-O3)
 add_definitions(-O0)
-add_definitions(-pedantic)
+add_definitions(-O2)
 add_definitions(-fopenmp)
 add_definitions(-std=c++20)
-add_definitions(-Wall)
 
 # Linker options
 set(LINK_OPTIONS -fopenmp)
@@ -83,7 +84,7 @@ set ( CXX_SRCS
 
 set_source_files_properties(
     ${CXX_SRCS} PROPERTIES COMPILE_FLAGS 
-    " -pedantic-errors -g -O0 -pedantic -fopenmp -std=c++20 -Wall")
+    " -Wfatal-errors -O1 -O -O3 -O0 -O2 -fopenmp -std=c++20")
 
 if(WIN32)
     enable_language(RC)

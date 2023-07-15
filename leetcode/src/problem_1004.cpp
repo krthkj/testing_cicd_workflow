@@ -49,7 +49,7 @@ int longestOnes(std::vector<int>& nums, int k)
  ***********************************************************/
 int problem_1004::solution_1(std::vector<int>& nums, int k)
 {
-    uint l{0}, r{0}, n = nums.size();
+    unsigned int l{0}, r{0}, n = nums.size();
     for (r = 0; r < n; ++r) {
         if (nums.at(r) == 0)
             k--;

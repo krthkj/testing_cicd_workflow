@@ -46,9 +46,9 @@ set(WORKSPACE_PATH "${CMAKE_CURRENT_LIST_DIR}/..")
 include_directories(
     .
     /usr/local/include
-    ../leetcode/include/
     ./include
-    ./leetcode
+    ../leetcode/include/
+    ../leetcode/tests/
 
 )
 

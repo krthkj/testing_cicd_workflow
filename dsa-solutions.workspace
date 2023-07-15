@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CodeLite_Workspace Name="dsa-solutions" Database="" Version="10000">
+<CodeLite_Workspace Name="dsa-solutions" Database="" Version="10000" SWTLW="Yes">
+  <WorkspaceParserMacros/>
+  <WorkspaceParserPaths/>
   <Project Name="leetcode" Path="leetcode/leetcode.project" Active="No"/>
   <Project Name="unittest-dsa" Path="unittest-dsa/unittest-dsa.project" Active="Yes"/>
   <Project Name="scratch_space" Path="scratch_space/scratch_space.project" Active="No"/>
@@ -7,14 +9,14 @@
     <WorkspaceConfiguration Name="Debug">
       <Environment/>
       <Project Name="leetcode" ConfigName="Debug"/>
-      <Project Name="unittest-dsa" ConfigName="Debug"/>
       <Project Name="scratch_space" ConfigName="Debug"/>
+      <Project Name="unittest-dsa" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release">
       <Environment/>
       <Project Name="leetcode" ConfigName="Release"/>
+      <Project Name="scratch_space" ConfigName="Release"/>
       <Project Name="unittest-dsa" ConfigName="Release"/>
-      <Project Name="scratch_space" ConfigName="Debug"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
