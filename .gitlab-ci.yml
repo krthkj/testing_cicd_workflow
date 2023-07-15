@@ -24,7 +24,7 @@ build:
     artifacts:
         expire_in:
             on_success: 7 days
-            on_failure: 1 day
+            on_failure: 1 days
         paths:
             - cmake-build-Release/output/
 
