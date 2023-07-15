@@ -4,6 +4,8 @@
 #include <iostream>
 #include <sstream>
 
+namespace leetcode::testing
+{
 TEST(leetcode_problem_9, Positive_Palindrome_Number)
 {
     bool res = leetcode::isPalindrome(121);
@@ -27,3 +29,4 @@ TEST(leetcode_problem_9, Negative_Number)
     bool res = leetcode::isPalindrome(-50);
     EXPECT_EQ(res, false);
 }
+} // namespace leetcode::testing

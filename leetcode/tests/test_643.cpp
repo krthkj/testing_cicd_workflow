@@ -4,6 +4,8 @@
 #include <iostream>
 #include <sstream>
 
+namespace leetcode::testing
+{
 TEST(leetcode_problem_643, case1)
 {
     std::vector<int> nums{1, 12, -5, -6, 50, 3};
@@ -59,3 +61,4 @@ TEST(leetcode_problem_643, case6)
     EXPECT_EQ(res, 5);
 }
 */
+} // namespace leetcode::testing

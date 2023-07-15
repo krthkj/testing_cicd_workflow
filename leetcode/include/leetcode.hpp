@@ -19,29 +19,31 @@ namespace leetcode
 void printlib(void);
 
 // Problems
-bool sample_problem(void);                                       // problem 0
-int lengthOfLongestSubstring(std::string s);                     // problem 3
-bool isPalindrome(int num);                                      // problem 9
-int romanToInt(std::string roman_string);                        // problem 13
-std::string longestCommonPrefix(std::vector<std::string>& strs); // problem 14
-ListNode* removeNthFromEnd(ListNode* head, int n);               // problem 19
-int searchInsert(std::vector<int>& nums, int target);            // problem 35
-int mySqrt(int x);                                               // problem 69
-std::vector<int> twoSum(std::vector<int>& numbers, int target);  // problem 167
-std::string largestNumber(std::vector<int>& nums);               // problem 179
-void rotate(std::vector<int>& nums, int k);                      // problem 189
-bool containsDuplicate(std::vector<int>& nums);                  // problem 217
-void moveZeroes(std::vector<int>& nums);                         // problem 283
-void reverseString(std::vector<char>& s);                        // problem 344
-std::string reverseWords(std::string s);                         // problem 557
-bool checkInclusion(std::string s1, std::string s2);             // problem 567
-double findMaxAverage(std::vector<int>& nums, int k);            // problem 643
-int search(std::vector<int>& nums, int target);                  // problem 704
-ListNode* middleNode(ListNode* head);                            // problem 876
-std::vector<int> sortedSquares(std::vector<int>& nums);          // problem 977
-int longestOnes(std::vector<int>& nums, int k);                  // problem 1004
+bool sample_problem(void);                                       // 0
+int lengthOfLongestSubstring(std::string s);                     // 3. Longest Substring Without Repeating Characters
+bool isPalindrome(int num);                                      // 9. Palindrome Number
+int romanToInt(std::string roman_string);                        // 13. Roman to Integer
+std::string longestCommonPrefix(std::vector<std::string>& strs); // 14. Longest Common Prefix
+ListNode* removeNthFromEnd(ListNode* head, int n);               // 19. Remove Nth Node From End of List
+int searchInsert(std::vector<int>& nums, int target);            // 35. Search Insert Position
+int mySqrt(int x);                                               // 69. Sqrt(x)
+std::vector<int> twoSum(std::vector<int>& numbers, int target);  // 167. Two Sum II - Input Array Is Sorted
+std::string largestNumber(std::vector<int>& nums);               // 179. Largest Number
+void rotate(std::vector<int>& nums, int k);                      // 189. Rotate Array
+bool containsDuplicate(std::vector<int>& nums);                  // 217. Contains Duplicate
+void moveZeroes(std::vector<int>& nums);                         // 283. Move Zeroes
+int lengthOfLongestSubstringKDistinct(std::string s, int k);     // 340. Longest Substring with At Most K Distinct
+                                                                 //      Characters
+void reverseString(std::vector<char>& s);                        // 344. Reverse String
+std::string reverseWords(std::string s);                         // 557. Reverse Words in a String III
+bool checkInclusion(std::string s1, std::string s2);             // 567. Permutation in String
+double findMaxAverage(std::vector<int>& nums, int k);            // 643. Maximum Average Subarray I
+int search(std::vector<int>& nums, int target);                  // 704. Binary Search
+ListNode* middleNode(ListNode* head);                            // 876. Middle of the Linked List
+std::vector<int> sortedSquares(std::vector<int>& nums);          // 977. Squares of a Sorted Array
+int longestOnes(std::vector<int>& nums, int k);                  // 1004. Max Consecutive Ones III
 
-// int firstBadVersion(int n);                                     // problem 278
+// int firstBadVersion(int n);                                     // 278. First Bad Version
 
 } // namespace leetcode
 #endif // LEETCODE_HPP

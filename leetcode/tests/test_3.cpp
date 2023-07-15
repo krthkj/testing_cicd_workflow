@@ -4,6 +4,8 @@
 #include <iostream>
 #include <sstream>
 
+namespace leetcode::testing
+{
 TEST(leetcode_problem_3, case1)
 {
     int res = leetcode::lengthOfLongestSubstring("abcabcbb");
@@ -21,3 +23,4 @@ TEST(leetcode_problem_3, case3)
     int res = leetcode::lengthOfLongestSubstring("pwwkew");
     EXPECT_EQ(res, 3);
 }
+} // namespace leetcode::testing

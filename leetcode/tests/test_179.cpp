@@ -5,6 +5,8 @@
 #include <string>
 #include <vector>
 
+namespace leetcode::testing
+{
 TEST(leetcode_problem_179, case1)
 {
     std::vector<int> nums = {10, 2};
@@ -42,3 +44,4 @@ TEST(leetcode_problem_179, case5)
     std::string res = leetcode::largestNumber(nums);
     EXPECT_EQ(res, "0");
 }
+} // namespace leetcode::testing

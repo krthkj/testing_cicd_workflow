@@ -4,6 +4,8 @@
 #include <iostream>
 #include <sstream>
 
+namespace leetcode::testing
+{
 TEST(leetcode_problem_69, case1)
 {
     int res = leetcode::mySqrt(4);
@@ -33,3 +35,4 @@ TEST(leetcode_problem_69, case5)
     int res = leetcode::mySqrt(81);
     EXPECT_EQ(res, 9);
 }
+} // namespace leetcode::testing

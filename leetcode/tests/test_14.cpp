@@ -4,6 +4,8 @@
 #include <string>
 #include <vector>
 
+namespace leetcode::testing
+{
 TEST(leetcode_problem_14, case1)
 {
     std::vector<std::string> strs = {"flower", "flow", "flight"};
@@ -24,3 +26,4 @@ TEST(leetcode_problem_14, case3)
     std::string res = leetcode::longestCommonPrefix(strs);
     EXPECT_EQ(res, "c");
 }
+} // namespace leetcode::testing

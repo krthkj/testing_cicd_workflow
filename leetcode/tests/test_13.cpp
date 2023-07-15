@@ -4,6 +4,8 @@
 #include <iostream>
 #include <sstream>
 
+namespace leetcode::testing
+{
 TEST(leetcode_problem_13, case1)
 {
     int res = leetcode::romanToInt("III");
@@ -59,3 +61,4 @@ TEST(leetcode_problem_13, case8)
     EXPECT_EQ(res, 0);
 }
 */
+} // namespace leetcode::testing

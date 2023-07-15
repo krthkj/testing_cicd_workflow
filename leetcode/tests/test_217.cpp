@@ -5,6 +5,8 @@
 #include <sstream>
 #include <vector>
 
+namespace leetcode::testing
+{
 TEST(leetcode_problem_217, case1)
 {
     std::vector<int> nums{1, 2, 3, 1};
@@ -3925,3 +3927,4 @@ TEST(leetcode_problem_217, case4)
     bool res = leetcode::containsDuplicate(nums);
     EXPECT_EQ(res, false);
 }
+} // namespace leetcode::testing

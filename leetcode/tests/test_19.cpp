@@ -5,6 +5,8 @@
 #include <iostream>
 #include <sstream>
 
+namespace leetcode::testing
+{
 /*
 TEST(leetcode_problem_0, case1)
 {
@@ -19,3 +21,4 @@ TEST(leetcode_problem_0, case2)
     EXPECT_EQ(res, true);
 }
 */
+}
