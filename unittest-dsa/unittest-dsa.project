@@ -5,6 +5,7 @@
   <VirtualDirectory Name="src">
     <VirtualDirectory Name="leetcode">
       <VirtualDirectory Name="problems">
+        <File Name="src/leetcode/problems/test_20.cpp"/>
         <File Name="src/leetcode/problems/test_9.cpp"/>
         <File Name="src/leetcode/problems/test_69.cpp"/>
         <File Name="src/leetcode/problems/test_643.cpp"/>
@@ -82,9 +83,8 @@
     <Configuration Name="Release" CompilerType="CLANG" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
       <Compiler Options="-Wfatal-errors;-O1;-O;-O3;-O2;-fopenmp;-std=c++20" C_Options="-Wfatal-errors;-O1;-O;-O3;-O2;-fopenmp;-std=c++20" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="1">
         <IncludePath Value="/usr/local/include"/>
-        <IncludePath Value="./include"/>
         <IncludePath Value="../leetcode/include/"/>
-        <IncludePath Value="../leetcode/tests/"/>
+        <IncludePath Value="./include"/>
       </Compiler>
       <Linker Options="-fopenmp" Required="yes">
         <LibraryPath Value="$(WorkspacePath)/cmake-build-$(WorkspaceConfiguration)/output/"/>

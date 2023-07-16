@@ -25,6 +25,7 @@ bool isPalindrome(int num);                                      // 9. Palindrom
 int romanToInt(std::string roman_string);                        // 13. Roman to Integer
 std::string longestCommonPrefix(std::vector<std::string>& strs); // 14. Longest Common Prefix
 ListNode* removeNthFromEnd(ListNode* head, int n);               // 19. Remove Nth Node From End of List
+bool isValid(std::string s);                                     // 20. Valid Parentheses
 int searchInsert(std::vector<int>& nums, int target);            // 35. Search Insert Position
 int mySqrt(int x);                                               // 69. Sqrt(x)
 std::vector<int> twoSum(std::vector<int>& numbers, int target);  // 167. Two Sum II - Input Array Is Sorted
@@ -42,6 +43,8 @@ int search(std::vector<int>& nums, int target);                  // 704. Binary 
 ListNode* middleNode(ListNode* head);                            // 876. Middle of the Linked List
 std::vector<int> sortedSquares(std::vector<int>& nums);          // 977. Squares of a Sorted Array
 int longestOnes(std::vector<int>& nums, int k);                  // 1004. Max Consecutive Ones III
+int sumOfSquares(std::vector<int>& nums);                        // 2778. Sum of Squares of Special Elements
+int maximumBeauty(std::vector<int>& nums, int k); // 2779. Maximum Beauty of an Array After Applying Operation
 
 // int firstBadVersion(int n);                                     // 278. First Bad Version
 
