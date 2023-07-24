@@ -7,30 +7,44 @@
   <Description/>
   <Dependencies/>
   <VirtualDirectory Name="src">
-    <File Name="src/problem_20.cpp"/>
-    <File Name="src/problem_340.cpp"/>
-    <File Name="src/problem_14.cpp"/>
+    <VirtualDirectory Name="Math &amp; Geometry">
+      <File Name="src/problem_50.cpp"/>
+    </VirtualDirectory>
     <File Name="src/problem_1004.cpp"/>
-    <File Name="src/problem_179.cpp"/>
-    <File Name="src/problem_643.cpp"/>
-    <File Name="src/problem_977.cpp"/>
-    <File Name="src/problem_876.cpp"/>
-    <File Name="src/problem_704.cpp"/>
     <File Name="src/problem_567.cpp"/>
+    <File Name="src/problem_340.cpp"/>
+    <File Name="src/problem_3.cpp"/>
+    <VirtualDirectory Name="Linked List">
+      <File Name="src/problem_19.cpp"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="Binary Search">
+      <File Name="src/problem_14.cpp"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="Stack">
+      <File Name="src/problem_20.cpp"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="Two Pointers"/>
+    <VirtualDirectory Name="Array &amp; Hashing">
+      <File Name="src/problem_929.cpp"/>
+      <File Name="src/problem_643.cpp"/>
+      <File Name="src/problem_1.cpp"/>
+      <File Name="src/problem_13.cpp"/>
+      <File Name="src/problem_977.cpp"/>
+      <File Name="src/problem_704.cpp"/>
+      <File Name="src/problem_283.cpp"/>
+      <File Name="src/problem_217.cpp"/>
+      <File Name="src/problem_189.cpp"/>
+      <File Name="src/problem_179.cpp"/>
+      <File Name="src/problem_167.cpp"/>
+      <File Name="src/problem_35.cpp"/>
+    </VirtualDirectory>
+    <File Name="src/problem_876.cpp"/>
     <File Name="src/problem_557.cpp"/>
     <File Name="src/problem_344.cpp"/>
-    <File Name="src/problem_283.cpp"/>
     <File Name="src/problem_278.cpp"/>
-    <File Name="src/problem_189.cpp"/>
-    <File Name="src/problem_167.cpp"/>
     <File Name="src/problem_69.cpp"/>
-    <File Name="src/problem_35.cpp"/>
     <File Name="src/leetcode_ds.cpp"/>
-    <File Name="src/problem_19.cpp"/>
     <File Name="src/problem_0.cpp"/>
-    <File Name="src/problem_3.cpp"/>
-    <File Name="src/problem_217.cpp"/>
-    <File Name="src/problem_13.cpp"/>
     <File Name="src/problem_9.cpp"/>
     <File Name="src/leetcode.cpp"/>
   </VirtualDirectory>

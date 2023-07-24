@@ -57,7 +57,7 @@ std::vector<int> solution_1(std::vector<int>& numbers, int target);
 /***********************************************************
  * Implementation: solving main problem
  ***********************************************************/
-std::vector<int> twoSum(std::vector<int>& numbers, int target)
+std::vector<int> twoSum_1(std::vector<int>& numbers, int target)
 {
     return problem_167::solution_1(numbers, target);
 }
