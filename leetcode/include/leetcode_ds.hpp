@@ -1,8 +1,6 @@
 #ifndef LEETCODE_DS_HPP
 #define LEETCODE_DS_HPP
 
-#include <vector>
-
 namespace leetcode
 {
 
@@ -32,6 +30,5 @@ struct ListNode {
     {
     }
 };
-
 } // namespace leetcode
 #endif // LEETCODE_DS_HPP

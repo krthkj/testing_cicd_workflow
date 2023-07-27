@@ -3,21 +3,21 @@
 #include <gtest/gtest.h>
 #include <iostream>
 #include <sstream>
+#include <vector>
 
 namespace leetcode::testing
 {
+/*
 TEST(leetcode_problem_0, case1)
 {
-    bool res = leetcode::sample_problem();
+    auto res = leetcode::sample_problem();
     EXPECT_EQ(res, true);
 }
 
-/*
 TEST(leetcode_problem_0, case2)
 {
-    bool res = leetcode::sample_problem();
+    auto res = leetcode::sample_problem();
     EXPECT_EQ(res, true);
 }
 */
-
 } // namespace leetcode::testing

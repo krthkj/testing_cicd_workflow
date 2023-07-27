@@ -82,22 +82,28 @@ set ( CXX_SRCS
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_14.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_167.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_179.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/problem_1870.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_189.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_19.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/problem_1.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_20.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_217.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_278.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_283.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/problem_2.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_340.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_344.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_35.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_3.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/problem_50.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_557.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_567.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_643.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_69.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_704.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/problem_7.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_876.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/problem_929.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_977.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_9.cpp
 )

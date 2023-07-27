@@ -44,6 +44,7 @@ std::vector<int> topKFrequent(std::vector<int>& nums, int k); // 347. Top K Freq
  */
 int maxArea(std::vector<int>& height);                            // 11. Container With Most Water
 std::vector<std::vector<int>> threeSum(std::vector<int>& nums);   // 15. 3Sum
+bool isValidSudoku(std::vector<std::vector<char>>& board);        // 36. Valid Sudoku
 int trap(std::vector<int>& height);                               // 42. Trapping Rain Water
 bool isPalindrome(std::string s);                                 // 125. Valid Palindrome
 std::vector<int> twoSum_1(std::vector<int>& numbers, int target); // 167. Two Sum II - Input Array Is Sorted
@@ -57,6 +58,8 @@ std::vector<int> twoSum_1(std::vector<int>& numbers, int target); // 167. Two Su
  * @brief Binary Search related function definitions
  * @depends Two Pointers
  */
+int searchInsert(std::vector<int>& nums, int target);    // 35. Search Insert Position
+int minSpeedOnTime(std::vector<int>& dist, double hour); // 1870. Minimum Speed to Arrive on Time
 
 /**
  * @brief Sliding Window related function definitions
@@ -133,13 +136,14 @@ double myPow(double x, int n); // 50. Pow(x, n)
  * @brief Assorted function definitions
  */
 bool sample_problem(void);                                       // 0
+ListNode* addTwoNumbers(ListNode* l1, ListNode* l2);             // 2. Add Two Numbers
+int reverse(int x);                                              // 7. Reverse Integer
 int lengthOfLongestSubstring(std::string s);                     // 3. Longest Substring Without Repeating Characters
 bool isPalindrome(int num);                                      // 9. Palindrome Number
 int romanToInt(std::string roman_string);                        // 13. Roman to Integer
 std::string longestCommonPrefix(std::vector<std::string>& strs); // 14. Longest Common Prefix
 ListNode* removeNthFromEnd(ListNode* head, int n);               // 19. Remove Nth Node From End of List
 bool isValid(std::string s);                                     // 20. Valid Parentheses
-int searchInsert(std::vector<int>& nums, int target);            // 35. Search Insert Position
 int mySqrt(int x);                                               // 69. Sqrt(x)
 std::string largestNumber(std::vector<int>& nums);               // 179. Largest Number
 void rotate(std::vector<int>& nums, int k);                      // 189. Rotate Array
@@ -159,5 +163,11 @@ int maximumBeauty(std::vector<int>& nums, int k); // 2779. Maximum Beauty of an 
 
 // int firstBadVersion(int n);                                     // 278. First Bad Version
 
+/**
+ * @brief Utility functions
+ */
+std::string toString(std::vector<int>& v); // convert vector to string
+std::string toString(ListNode* node);      // convert List to string
+leetcode::ListNode* toListNode(const std::vector<int>& v); // convert vector to ListNode
 } // namespace leetcode
 #endif // LEETCODE_HPP

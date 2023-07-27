@@ -8,16 +8,20 @@
   <Dependencies/>
   <VirtualDirectory Name="src">
     <VirtualDirectory Name="Math &amp; Geometry">
-      <File Name="src/problem_50.cpp"/>
+      <File Name="src/problem_7.cpp"/>
     </VirtualDirectory>
     <File Name="src/problem_1004.cpp"/>
     <File Name="src/problem_567.cpp"/>
     <File Name="src/problem_340.cpp"/>
     <File Name="src/problem_3.cpp"/>
     <VirtualDirectory Name="Linked List">
+      <File Name="src/problem_2.cpp"/>
       <File Name="src/problem_19.cpp"/>
     </VirtualDirectory>
     <VirtualDirectory Name="Binary Search">
+      <File Name="src/problem_50.cpp"/>
+      <File Name="src/problem_35.cpp"/>
+      <File Name="src/problem_1870.cpp"/>
       <File Name="src/problem_14.cpp"/>
     </VirtualDirectory>
     <VirtualDirectory Name="Stack">
@@ -36,7 +40,6 @@
       <File Name="src/problem_189.cpp"/>
       <File Name="src/problem_179.cpp"/>
       <File Name="src/problem_167.cpp"/>
-      <File Name="src/problem_35.cpp"/>
     </VirtualDirectory>
     <File Name="src/problem_876.cpp"/>
     <File Name="src/problem_557.cpp"/>
@@ -59,7 +62,7 @@
       <ResourceCompiler Options=""/>
     </GlobalSettings>
     <Configuration Name="Debug" CompilerType="CLANG" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
-      <Compiler Options="-Wredundant-decls;-Winline;-Wswitch-enum;-Wmissing-declarations;-Wnon-virtual-dtor;-Wzero-as-null-pointer-constant;-Winit-self;-Wswitch-default;-Wfloat-equal;-pedantic-errors;-g;-O0;-Og;-gdwarf-2;-pedantic;-W;-fopenmp;-Wextra;-std=c++20;-Wall" C_Options="-Wredundant-decls;-Winline;-Wswitch-enum;-Wmissing-declarations;-Wnon-virtual-dtor;-Wzero-as-null-pointer-constant;-Winit-self;-Wswitch-default;-Wfloat-equal;-pedantic-errors;-g;-O0;-Og;-gdwarf-2;-pedantic;-W;-fopenmp;-Wextra;-std=c++20;-Wall" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="1">
+      <Compiler Options="-Wredundant-decls;-Winline;-Wswitch-enum;-Wmissing-declarations;-Wnon-virtual-dtor;-Wzero-as-null-pointer-constant;-Winit-self;-Wswitch-default;-Wfloat-equal;-pedantic-errors;-pg;-g;-O0;-Og;-gdwarf-2;-pedantic;-W;-fopenmp;-Wextra;-std=c++20;-Wall" C_Options="-Wredundant-decls;-Winline;-Wswitch-enum;-Wmissing-declarations;-Wnon-virtual-dtor;-Wzero-as-null-pointer-constant;-Winit-self;-Wswitch-default;-Wfloat-equal;-pedantic-errors;-pg;-g;-O0;-Og;-gdwarf-2;-pedantic;-W;-fopenmp;-Wextra;-std=c++20;-Wall" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="1">
         <IncludePath Value="./include"/>
       </Compiler>
       <Linker Options="-fopenmp;-O0" Required="yes"/>

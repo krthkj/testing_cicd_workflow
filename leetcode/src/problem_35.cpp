@@ -28,6 +28,7 @@
 #include "leetcode.hpp"
 
 #include <iostream>
+#include <vector>
 
 namespace leetcode
 {

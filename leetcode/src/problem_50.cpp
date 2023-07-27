@@ -36,7 +36,7 @@ namespace leetcode
  ***********************************************************/
 namespace problem_50
 {
-double binaryExp(double x, long long signed int n);
+double binaryExp(double x, int n);
 } // namespace problem_50
 
 /***********************************************************
@@ -44,13 +44,13 @@ double binaryExp(double x, long long signed int n);
  ***********************************************************/
 double myPow(double x, int n)
 {
-    return problem_50::binaryExp(x, (long long signed int)n);
+    return problem_50::binaryExp(x, n);
 }
 
 /***********************************************************
  * Implementation: Variations of Solution
  ***********************************************************/
-double problem_50::binaryExp(double x, long long signed int n)
+double problem_50::binaryExp(double x, int n)
 {
     if (n == 0)
         return 1.0;

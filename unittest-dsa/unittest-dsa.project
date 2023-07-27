@@ -5,6 +5,13 @@
   <VirtualDirectory Name="src">
     <VirtualDirectory Name="leetcode">
       <VirtualDirectory Name="problems">
+        <File Name="src/leetcode/problems/test_7.cpp"/>
+        <File Name="src/leetcode/problems/test_2.cpp"/>
+        <File Name="src/leetcode/problems/test_167.cpp"/>
+        <File Name="src/leetcode/problems/test_50.cpp"/>
+        <File Name="src/leetcode/problems/test_35.cpp"/>
+        <File Name="src/leetcode/problems/test_1.cpp"/>
+        <File Name="src/leetcode/problems/test_1870.cpp"/>
         <File Name="src/leetcode/problems/test_20.cpp"/>
         <File Name="src/leetcode/problems/test_9.cpp"/>
         <File Name="src/leetcode/problems/test_69.cpp"/>
@@ -36,7 +43,7 @@
       <ResourceCompiler Options=""/>
     </GlobalSettings>
     <Configuration Name="Debug" CompilerType="CLANG" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
-      <Compiler Options="-pedantic-errors;-g;-O0;-pedantic;-fopenmp;-std=c++20;-Wall" C_Options="-pedantic-errors;-g;-O0;-pedantic;-fopenmp;-std=c++20;-Wall" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="1">
+      <Compiler Options="-pedantic-errors;-pg;-g;-O0;-pedantic;-fopenmp;-std=c++20;-Wall" C_Options="-pedantic-errors;-pg;-g;-O0;-pedantic;-fopenmp;-std=c++20;-Wall" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="1">
         <IncludePath Value="/usr/local/include"/>
         <IncludePath Value="../leetcode/include/"/>
         <IncludePath Value="./include"/>

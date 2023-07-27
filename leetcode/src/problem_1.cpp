@@ -46,7 +46,7 @@ namespace leetcode
 namespace problem_1
 {
 std::vector<int> solution_bruteForce(std::vector<int>& nums, int target);
-std::vector<int> solution_onePassHash(std::vector<int>& nums, int target);
+std::vector<int> solution_onePassHash(std::vector<int>& nums, int target); // output values reversed, but still valid
 std::vector<int> solution_twoPassHash(std::vector<int>& nums, int target);
 } // namespace problem_1
 
@@ -55,7 +55,7 @@ std::vector<int> solution_twoPassHash(std::vector<int>& nums, int target);
  ***********************************************************/
 std::vector<int> twoSum(std::vector<int>& nums, int target)
 {
-    return problem_1::solution_onePassHash(nums, target);
+    return problem_1::solution_twoPassHash(nums, target);
 }
 
 /***********************************************************
@@ -83,14 +83,6 @@ std::vector<int> problem_1::solution_onePassHash(std::vector<int>& nums, int tar
         else
             mp[nums.at(i)] = i;
     }
-
-    // for (int i{0}; i < n; ++i) {
-    //     if (mp.find(target - nums.at(i)) != mp.end())
-    //         return std::vector<int>{i, mp[target - nums.at(i)]};
-    //     else
-    //         mp[nums.at(i)] = i;
-    // }
-
     return std::vector<int>{0, 0};
 }
 
@@ -109,10 +101,6 @@ std::vector<int> problem_1::solution_twoPassHash(std::vector<int>& nums, int tar
         if (itr != mp.end() && itr->second != i)
             return std::vector<int>{i, itr->second};
     }
-
-    // for (int i{0}; i < n; ++i)
-    //     if (mp.find(target - nums.at(i)) != mp.end() && mp[target - nums.at(i)] != i)
-    //         return std::vector<int>{i, mp[target - nums.at(i)]};
 
     return std::vector<int>{0, 0};
 }
