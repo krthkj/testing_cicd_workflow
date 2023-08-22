@@ -28,7 +28,7 @@ void printlib(void);
  * @depends None
  */
 std::vector<int> twoSum(std::vector<int>& nums, int target);                         // 1. Two Sum
-bool isValidSudoku(std::vector<std::vector<char>>& board);                           // valid Sudoku
+bool isValidSudoku(std::vector<std::vector<char>>& board);                           // 36. Valid Sudoku
 std::vector<std::vector<std::string>> groupAnagrams(std::vector<std::string>& strs); // 49. Group Anagrams
 int longestConsecutive(std::vector<int>& nums);               // 128. Longest Consecutive Sequence
 bool containsDuplicate(std::vector<int>& nums);               // 217. Contains Duplicate
@@ -44,7 +44,6 @@ std::vector<int> topKFrequent(std::vector<int>& nums, int k); // 347. Top K Freq
  */
 int maxArea(std::vector<int>& height);                            // 11. Container With Most Water
 std::vector<std::vector<int>> threeSum(std::vector<int>& nums);   // 15. 3Sum
-bool isValidSudoku(std::vector<std::vector<char>>& board);        // 36. Valid Sudoku
 int trap(std::vector<int>& height);                               // 42. Trapping Rain Water
 bool isPalindrome(std::string s);                                 // 125. Valid Palindrome
 std::vector<int> twoSum_1(std::vector<int>& numbers, int target); // 167. Two Sum II - Input Array Is Sorted
@@ -70,6 +69,7 @@ int minSpeedOnTime(std::vector<int>& dist, double hour); // 1870. Minimum Speed 
  * @brief Linked List related function definitions
  * @depends Two Pointers
  */
+ListNode* mergeTwoLists(ListNode* list1, ListNode* list2); // 21. Merge Two Sorted Lists
 
 /**
  * @brief Trees related function definitions
@@ -145,6 +145,7 @@ std::string longestCommonPrefix(std::vector<std::string>& strs); // 14. Longest 
 ListNode* removeNthFromEnd(ListNode* head, int n);               // 19. Remove Nth Node From End of List
 bool isValid(std::string s);                                     // 20. Valid Parentheses
 int mySqrt(int x);                                               // 69. Sqrt(x)
+std::string convertToTitle(int columnNumber);                    // 168. Excel Sheet Column Title
 std::string largestNumber(std::vector<int>& nums);               // 179. Largest Number
 void rotate(std::vector<int>& nums, int k);                      // 189. Rotate Array
 void moveZeroes(std::vector<int>& nums);                         // 283. Move Zeroes
@@ -156,6 +157,7 @@ bool checkInclusion(std::string s1, std::string s2);             // 567. Permuta
 double findMaxAverage(std::vector<int>& nums, int k);            // 643. Maximum Average Subarray I
 int search(std::vector<int>& nums, int target);                  // 704. Binary Search
 ListNode* middleNode(ListNode* head);                            // 876. Middle of the Linked List
+int numUniqueEmails(std::vector<std::string>& emails);           // 929. Unique Email Addresses
 std::vector<int> sortedSquares(std::vector<int>& nums);          // 977. Squares of a Sorted Array
 int longestOnes(std::vector<int>& nums, int k);                  // 1004. Max Consecutive Ones III
 int sumOfSquares(std::vector<int>& nums);                        // 2778. Sum of Squares of Special Elements
@@ -166,8 +168,8 @@ int maximumBeauty(std::vector<int>& nums, int k); // 2779. Maximum Beauty of an 
 /**
  * @brief Utility functions
  */
-std::string toString(std::vector<int>& v); // convert vector to string
-std::string toString(ListNode* node);      // convert List to string
+std::string toString(std::vector<int>& v);                 // convert vector to string
+std::string toString(ListNode* node);                      // convert List to string
 leetcode::ListNode* toListNode(const std::vector<int>& v); // convert vector to ListNode
 } // namespace leetcode
 #endif // LEETCODE_HPP

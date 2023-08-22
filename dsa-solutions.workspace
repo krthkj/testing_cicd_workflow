@@ -5,7 +5,7 @@
   <Project Name="leetcode" Path="leetcode/leetcode.project" Active="No"/>
   <Project Name="unittest-dsa" Path="unittest-dsa/unittest-dsa.project" Active="Yes"/>
   <Project Name="scratch_space" Path="scratch_space/scratch_space.project" Active="No"/>
-  <Project Name="bad-code" Path="bad-code/bad-code.project"/>
+  <Project Name="bad-code" Path="bad-code/bad-code.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug">
       <Environment/>

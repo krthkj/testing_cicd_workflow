@@ -81,6 +81,7 @@ set ( CXX_SRCS
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_13.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_14.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_167.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/problem_168.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_179.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_1870.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_189.cpp
@@ -88,6 +89,7 @@ set ( CXX_SRCS
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_1.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_20.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_217.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/problem_21.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_278.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_283.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_2.cpp

@@ -7,6 +7,7 @@
   <Description/>
   <Dependencies/>
   <VirtualDirectory Name="src">
+    <File Name="src/problem_168.cpp"/>
     <VirtualDirectory Name="Math &amp; Geometry">
       <File Name="src/problem_7.cpp"/>
     </VirtualDirectory>
@@ -15,6 +16,7 @@
     <File Name="src/problem_340.cpp"/>
     <File Name="src/problem_3.cpp"/>
     <VirtualDirectory Name="Linked List">
+      <File Name="src/problem_21.cpp"/>
       <File Name="src/problem_2.cpp"/>
       <File Name="src/problem_19.cpp"/>
     </VirtualDirectory>

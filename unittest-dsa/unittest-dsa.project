@@ -5,6 +5,8 @@
   <VirtualDirectory Name="src">
     <VirtualDirectory Name="leetcode">
       <VirtualDirectory Name="problems">
+        <File Name="src/leetcode/problems/test_21.cpp"/>
+        <File Name="src/leetcode/problems/test_168.cpp"/>
         <File Name="src/leetcode/problems/test_7.cpp"/>
         <File Name="src/leetcode/problems/test_2.cpp"/>
         <File Name="src/leetcode/problems/test_167.cpp"/>
