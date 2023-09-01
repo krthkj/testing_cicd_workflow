@@ -7,6 +7,9 @@
   <Description/>
   <Dependencies/>
   <VirtualDirectory Name="src">
+    <VirtualDirectory Name="Bit Manipulation">
+      <File Name="src/problem_338.cpp"/>
+    </VirtualDirectory>
     <File Name="src/problem_168.cpp"/>
     <VirtualDirectory Name="Math &amp; Geometry">
       <File Name="src/problem_7.cpp"/>

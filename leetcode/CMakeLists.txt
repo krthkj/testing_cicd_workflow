@@ -93,6 +93,7 @@ set ( CXX_SRCS
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_278.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_283.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_2.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/problem_338.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_340.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_344.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/problem_35.cpp

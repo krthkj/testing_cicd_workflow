@@ -125,6 +125,7 @@ ListNode* mergeTwoLists(ListNode* list1, ListNode* list2); // 21. Merge Two Sort
  * @brief Bit Manipulation related function definitions
  * @depends 1D Dynamic Programming
  */
+std::vector<int> countBits(int n); // 338. Counting Bits
 
 /**
  * @brief Math & Geometry related function definitions
