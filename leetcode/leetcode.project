@@ -7,6 +7,10 @@
   <Description/>
   <Dependencies/>
   <VirtualDirectory Name="src">
+    <VirtualDirectory Name="Dynamic Programming">
+      <File Name="src/problem_2707.cpp"/>
+      <File Name="src/problem_62.cpp"/>
+    </VirtualDirectory>
     <VirtualDirectory Name="Bit Manipulation">
       <File Name="src/problem_338.cpp"/>
     </VirtualDirectory>

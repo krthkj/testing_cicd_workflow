@@ -110,6 +110,7 @@ ListNode* mergeTwoLists(ListNode* list1, ListNode* list2); // 21. Merge Two Sort
  * @brief 1D Dynamic Programming related function definitions
  * @depends Backtracking
  */
+int minExtraChar(std::string s, std::vector<std::string>& dictionary); // 2707. Extra Characters in a String
 
 /**
  * @brief Advanced Graphs related function definitions
@@ -120,6 +121,7 @@ ListNode* mergeTwoLists(ListNode* list1, ListNode* list2); // 21. Merge Two Sort
  * @brief 2D Dynamic Programming related function definitions
  * @depends 1D Dynamic Programming, Graphs
  */
+int uniquePaths(int m, int n); // 62. Unique Paths
 
 /**
  * @brief Bit Manipulation related function definitions

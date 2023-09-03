@@ -90,12 +90,14 @@ set ( CXX_SRCS
     ${CMAKE_CURRENT_LIST_DIR}/src/leetcode/problems/test_20.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/leetcode/problems/test_217.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/leetcode/problems/test_21.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/leetcode/problems/test_2707.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/leetcode/problems/test_2.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/leetcode/problems/test_338.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/leetcode/problems/test_340.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/leetcode/problems/test_35.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/leetcode/problems/test_3.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/leetcode/problems/test_50.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/leetcode/problems/test_62.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/leetcode/problems/test_643.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/leetcode/problems/test_69.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/leetcode/problems/test_7.cpp
