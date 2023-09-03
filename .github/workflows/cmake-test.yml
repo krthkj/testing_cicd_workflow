@@ -32,6 +32,9 @@ jobs:
             cpp_compiler: clang++
 
     steps:
+    - name: Install GoogleTest
+      run: sudo apt install libgtest-dev
+
     - uses: actions/checkout@v3
   
     - name: Set reusable strings
